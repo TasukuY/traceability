@@ -33,6 +33,7 @@
             reviewInput.value = ''
 
             res.data.forEach((reviewText, index) => {
+                console.log(reviewText, index)
                 container.innerHTML += `<p review=${index}>${reviewText}</p>`
             })
 
