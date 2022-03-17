@@ -23,7 +23,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <script>
-        const baseURL = "https://f19-devdps-lab-ty.herokuapp.com/" || "http://localhost:4005";
+        const baseURL = "https://f19-devdps-lab-ty.herokuapp.com" || "http://localhost:4005";
         const addReview = document.querySelector('form');
         const reviewInput = document.querySelector('input');
         const container = document.querySelector('section');
@@ -74,7 +74,7 @@
         }
 
         axios
-            .get(`${baseURL}/api/reviews/`)
+            .get(`${baseURL}/`)
             .then(res => {
                 putTheThingInTheView(res)
             })
