@@ -22,10 +22,10 @@ const reviews = ['This Sake is the best!', 'Best stuff', 'love sake']
 
 app.use(express.static(path.join(__dirname, "../public")));
 
-app.get('/', (req, res) => {
-    rollbar.info('HTML served successfully');
-    res.sendFile(path.join(__dirname, '../public/index.html'))
-})
+// app.get('/', (req, res) => {
+//     rollbar.info('HTML served successfully');
+//     res.sendFile(path.join(__dirname, '../public/index.html'))
+// })
 
 app.get('/api/reviews', (req, res) => {
     rollbar.info('Someone got the list of reviews to load');
