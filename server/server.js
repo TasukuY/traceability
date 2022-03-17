@@ -20,7 +20,7 @@ rollbar.log('Hello world!')
 
 const reviews = ['This Sake is the best!', 'Best stuff', 'love sake']
 
-app.use(express.static(path.join(__dirname, "../public")));
+// app.use(express.static(path.join(__dirname, "../public")));
 
 app.get('/', (req, res) => {
     rollbar.info('HTML served successfully');
