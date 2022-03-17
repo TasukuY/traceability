@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <br>
+      <button id="complimentButton">Get a compliment</button>
+    <br><br>
+      <h2>Add a New Feature</h2>
+      <button id="fortuneButton">Get a fortune</button>
+    <br><br>
+      <h2>Add 3 More Features</h2>
+      <button id="inspiringMessage">Get Inspiring message</button>
+      <br><br><br>
+      <h2>User Database</h2>
+      <button id="getAllUser">Get all users</button>
+    <br><br><br><br>
+      <form class="addNewUser">
+        <label>Username:</label>
+        <input id="newUser"/><br><br>
+        <button>Add a New User</button>
+      </form>
+    <br><br><br><br>
+      <form class="changeUsername">
+        <label>Old Username:</label>
+        <input id="oldUserName"/><br><br>
+        <label>New Username:</label>
+        <input id="newUserName"/><br><br>
+        <button>Edit this User</button>
+      </form>
+    <br><br><br><br>
+      <form class="deleteUser">
+        <label>User to delete:</label>
+        <input id="deleteUsername"/><br><br>
+        <button>Delete This User</button>
+      </form>
+    <br><br>
+    <section id="userList"></section>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
